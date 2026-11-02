@@ -1,0 +1,102 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* padding i border */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+#main-header {
+    background: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px; /*padding (внутрішні відступи) */
+    margin-bottom: 30px; /*margin (зовнішні відступи)*/
+    border-bottom: 4px solid #3498db; /*padding (внутрішні відступи)*/
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px; /*margin (зовнішні відступи)*/
+}
+
+/*макет на Flexbox*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto; /*margin (зовнішні відступи)*/
+    padding: 0 20px;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0; /*padding (внутрішні відступи)*/
+    border-radius: 8px;
+    padding: 20px; /*padding (внутрішні відступи)*/
+    flex: 1 1 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ecf0f1; /*padding (внутрішні відступи)*/
+    padding-bottom: 5px;
+}
+
+.info-list {
+    list-style: none;
+}
+
+
+.info-list li:first-child {
+    /*псевдоклас*/
+    font-weight: 500;
+}
+
+
+.info-list li {
+    padding: 6px 0;
+}
+
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+a:hover {
+    /*псевдоклас */
+    color: #1d6fa5;
+    text-decoration: underline;
+}
+
+a[target="_blank"] {
+    font-weight: bold;
+}
+
+#*/Медіазапит для вузьких екранів */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #main-header {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
