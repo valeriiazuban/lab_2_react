@@ -15,7 +15,7 @@ function Header({ theme, toggleTheme }) {
         Зубань Валерія
       </h1>
       <p className="text-xl font-medium text-slate-300">
-        Студент / Web Developer
+        Студентка / Web Developer
       </p>
     </header>
   );
